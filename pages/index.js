@@ -4,30 +4,8 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import {motion} from 'framer-motion'
 import Layout from '../components/layout'
+import Nav from './navigator'
 
-
-const svgVariants = {
-  hidden:{rotate:-180},
-  visible:{
-    rotate:0,
-    transition:{
-      duration:1,
-    }
-  }
-}
-
-const pathVariants ={
-  hidden: {opacity:0,pathLength:0},
-  visible: 
-  {
-    opacity:1,
-    pathLength:1,
-    transition:{
-      duration:2,
-      ease: 'easeInOut'
-    }
-  }
-}
 
 
 export default function Home({data}) {
@@ -50,8 +28,6 @@ export default function Home({data}) {
               <h3 className={styles.subname_h3}>Statistian</h3>
             </div>
         </div>
-
-
       </motion.div>
     </Layout>
   );

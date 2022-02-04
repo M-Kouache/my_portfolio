@@ -2,7 +2,7 @@ import {motion} from 'framer-motion'
 import Layout from '../../components/layout'
 import styles from '../../styles/Home.module.css'
 import Link from 'next/link'
-
+import Nav from '../navigator'
 
 const About = ()=> {
     return (
@@ -18,6 +18,7 @@ const About = ()=> {
                 <a><h1>back to home</h1></a>
             </Link>
             </motion.div>
+            <Nav/>
         </Layout>
     )
 }
