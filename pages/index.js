@@ -3,17 +3,57 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import {motion} from 'framer-motion'
+import Layout from '../components/layout'
+
+
+const svgVariants = {
+  hidden:{rotate:-180},
+  visible:{
+    rotate:0,
+    transition:{
+      duration:1,
+    }
+  }
+}
+
+const pathVariants ={
+  hidden: {opacity:0,pathLength:0},
+  visible: 
+  {
+    opacity:1,
+    pathLength:1,
+    transition:{
+      duration:2,
+      ease: 'easeInOut'
+    }
+  }
+}
 
 
 export default function Home({data}) {
   return (  
-    <motion.div
-      initial={{opacity:0}}
-      animate={{opacity:1}}
-      transition={{duration:3}}
-    >
-      Dumy test.
-    </motion.div>
+    <Layout>
+      <motion.div
+        className={styles.home_motion_container}
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        exit={{opacity:0}}
+        transition={{duration:2}}
+      >
+
+
+        <div className={styles.home_name_container}>
+            <h1 className={styles.home_h1}>MOHAMED KOUACHE</h1>
+            <div className={styles.home_subname}>
+              <h3 className={styles.subname_h3}>WebDesigner</h3><span>-</span>
+              <h3 className={styles.subname_h3}>Developer</h3><span>-</span>
+              <h3 className={styles.subname_h3}>Statistian</h3>
+            </div>
+        </div>
+
+
+      </motion.div>
+    </Layout>
   );
 }
 
