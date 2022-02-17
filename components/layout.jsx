@@ -7,7 +7,7 @@ const Layout = ({children})=>{
     return (
         <main className={styles.layout_container}>
             <AnimatePresence exitBeforeEnter>
-                {children}
+                { children  }
             </AnimatePresence>
             <Nav/>
         </main>

@@ -3,6 +3,8 @@ import Layout from '../../components/layout';
 import AnimatePresence from '../../components/motionPresence'
 import Project from './projectComponent'
 import ProjectSection from './projectSection';
+import Nav from '../navigator'
+
 
 const Work = ()=> {
     return (

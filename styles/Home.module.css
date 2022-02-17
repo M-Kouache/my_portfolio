@@ -70,7 +70,12 @@
   height: 100vh;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  -ms-overflow-style:none;
   scrollbar-width: none;
+}
+
+.project_component::-webkit-scrollbar{
+  display:none;
 }
 
 .project_wrapper{
