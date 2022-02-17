@@ -109,11 +109,11 @@ const Nav = ()=> {
     
 
     return(
-        <Draggable onClick={onClick} onDrag={handleDrag} onStop={handleStop} bounds="parent">
+        <Draggable onDrag={handleDrag} onStop={handleStop} bounds="parent">
             <motion.div title="Drag me if you want"  className={Toggle ? NavContainer+" border-green-400" : NavContainer+" border-lilac"}>
-                <div className="text-zircon"><FaRegLifeRing className={Toggle ? "text-2xl animate-pulse" : "text-2xl"}/></div>
+                <div className="text-zircon w-full h-full"><FaRegLifeRing className={Toggle ? "text-2xl animate-pulse" : "text-2xl"}/></div>
                 <Link href="/">
-                    <a className={Toggle ? "hidden" : "top-[-5rem] right-[1rem] "+Active.home+subNavClass}>
+                    <a className={Toggle ? "hidden" : "top-[-5rem] right-[1rem] z-50 "+Active.home+subNavClass}>
                 <motion.div  title="Home" initial="hidden" animate="visible" variants={Toggle ? ease_out : ease_in} transition={{duration:.3}} 
                         ><VscHome className="text-2xl" /></motion.div>
                     </a>
