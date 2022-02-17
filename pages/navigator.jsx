@@ -1,6 +1,4 @@
 import {useState, useEffect} from 'react'
-import Link from 'next/link';
-import styles from '../styles/Home.module.css'
 import {motion} from 'framer-motion'
 import {VscCode,VscHome,VscAccount,VscMail,VscFoldUp,VscFoldDown} from 'react-icons/vsc';
 import Draggable from 'react-draggable';
@@ -37,9 +35,9 @@ const Nav = ()=> {
 
     const subNavClass = "absolute cursor-pointer rounded-[50%] text-zircon bg-slate-800 w-18 border-[.3rem] text-center p-2 ";
 
-    const NavContainer = "absolute bottom-[2.5rem] drop-shadow-2xl left-10 p-2 cursor-grab rounded-2xl bg-firefly border-4 w-fit ";
+    const NavContainer = "absolute bottom-[2.5rem] drop-shadow-2xl left-10 p-2 cursor-grab rounded-2xl bg-firefly border-4 w-fit";
 
-    const activeClass = "border-green-400 ";
+    const activeClass = " border-green-400 ";
     const unActiveClass = " border-lilac ";
 
     const [Active,setActive] = useState({
@@ -103,72 +101,58 @@ const Nav = ()=> {
     }
 
     const onClick = (e)=>{
+
+        console.log(e)
+
+        if(e.target.id == '/'){
+            router.push('/')
+        }
+
+        if(e.target.id == '/work'){
+            router.push('/work')
+        }
+
+        if(e.target.id == '/about'){
+            router.push('/about')
+        }
+
+        if(e.target.id == '/contact'){
+            router.push('/contact')
+        }
         setToggle(!Toggle);
     }
 
-    
+   const Clicked = (e)=>{
+       console.log('clicked')
+   } 
+
 
     return(
-        <Draggable onDrag={handleDrag} onStop={handleStop} bounds="parent">
+        <Draggable id='drg' onDrag={handleDrag} onStop={handleStop} bounds="parent">
             <motion.div title="Drag me if you want"  className={Toggle ? NavContainer+" border-green-400" : NavContainer+" border-lilac"}>
                 <div className="text-zircon w-full h-full"><FaRegLifeRing className={Toggle ? "text-2xl animate-pulse" : "text-2xl"}/></div>
-                <Link href="/">
-                    <a className={Toggle ? "hidden" : "top-[-5rem] right-[1rem] z-50 "+Active.home+subNavClass}>
-                <motion.div  title="Home" initial="hidden" animate="visible" variants={Toggle ? ease_out : ease_in} transition={{duration:.3}} 
-                        ><VscHome className="text-2xl" /></motion.div>
-                    </a>
-                </Link>
-
-                <Link href="/work">
-                    <a className={Toggle ? "hidden" : "top-[-4.6rem] right-[-2.8rem] "+subNavClass+Active.work}>
-                    <motion.div title="My work" initial="hidden" animate="visible" variants={Toggle ? ease_out : ease_in} transition={{duration:0.3}} 
-                        ><VscCode className="text-2xl" /></motion.div>
-                    </a>
-                </Link>
+                    <button id='/' className={Toggle ? "hidden" : " top-[-5rem] left-[-1.5rem] "+Active.home+subNavClass}>
+                        <motion.div id='/' title="Home" initial="hidden" animate="visible" variants={Toggle ? ease_out : ease_in} transition={{duration:.3}} 
+                        ><VscHome id='/'  className="text-2xl"/></motion.div>
+                    </button>
+                    
+                    <button className={Toggle ? "hidden" : "top-[-4.6rem] right-[-2.8rem] "+subNavClass+Active.work}>
+                    <motion.div id='/work' title="My work" initial="hidden" animate="visible" variants={Toggle ? ease_out : ease_in} transition={{duration:0.3}} 
+                        ><VscCode id='/work'  className="text-2xl" /></motion.div>
+                    </button>
                 
-                <Link href="/about">
-                    <a className={Toggle ? "hidden" : "right-[-5.3rem] top-[-2rem] "+subNavClass+Active.about}>
-                    <motion.div title="About me" initial="hidden" animate="visible" variants={Toggle ? ease_out : ease_in} transition={{duration:0.3}} 
-                        ><VscAccount className="text-2xl" /></motion.div>
-                    </a>
-                </Link>
+                    <button className={Toggle ? "hidden" : "right-[-5.3rem] top-[-2rem] "+subNavClass+Active.about}>
+                    <motion.div id='/about' title="About me" initial="hidden" animate="visible" variants={Toggle ? ease_out : ease_in} transition={{duration:0.3}} 
+                        ><VscAccount id='/about' className="text-2xl" /></motion.div>
+                    </button>
 
-                <Link href="/contact">
-                    <a className={Toggle ? "hidden" : "right-[-5.5rem] bottom-[-2rem] "+subNavClass+Active.contact}>
-                    <motion.div title="Contact me" initial="hidden" animate="visible" variants={Toggle ? ease_out : ease_in} transition={{duration:0.3}} 
-                        ><VscMail className="text-2xl" /></motion.div>
-                    </a>
-                </Link>
+                    <button className={Toggle ? "hidden" : "right-[-5.5rem] bottom-[-2rem] "+subNavClass+Active.contact}>
+                    <motion.div id='/contact' title="Contact me" initial="hidden" animate="visible" variants={Toggle ? ease_out : ease_in} transition={{duration:0.3}} 
+                        ><VscMail id='/contact' className="text-2xl" /></motion.div>
+                    </button>
+                <div/>
             </motion.div>
-             {/*<motion.div>
-                <div className={isToggle ? styles.nav_container_visible : styles.nav_container_hidden}>
-                    <Link href="/">
-                        <a>
-                            <VscHome className={styles.nav_container_icons} />
-                        </a>
-                    </Link>
-                    <Link href="/about">
-                        <a>
-                            <VscAccount className={styles.nav_container_icons}/>
-                        </a>
-                    </Link>
-                    <Link href="/work">
-                        <a>
-                            <VscCode className={styles.nav_container_icons}/>
-                        </a>
-                    </Link>
-                    <Link href="/contact">
-                        <a>
-                            <VscMail className={styles.nav_container_icons}/>
-                        </a>
-                    </Link>
-                </div>
-            </motion.div>
-            
-            <div className={styles.nav_toggle_btn} onClick={toggle}>
-                {isToggle? <VscFoldDown/> : <VscFoldUp/>}
-            </div>*/}
-        </Draggable>
+       </Draggable>
     );
 }
 
