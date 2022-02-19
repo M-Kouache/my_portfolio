@@ -4,7 +4,7 @@ import AnimatePresence from '../../components/motionPresence'
 import Validator from 'validator'
 import {FaTimes} from 'react-icons/fa'
 import {motion} from 'framer-motion';
-import {VscIssueDraft} from 'react-icons/vsc'
+import {IoMdPaperPlane} from 'react-icons/io'
 import {VscPass} from 'react-icons/vsc';
 import {VscError} from 'react-icons/vsc'
 
@@ -193,13 +193,7 @@ const Contact =()=> {
                             <div className="flex flex-wrap -mx-3 mb-6">
                                 <div className="w-full flex items-center px-3">
                                     <input className="shadow mb-6 bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"  type="submit" value="Let's talk." required />        
-                                    <motion.div
-                                        animate={{rotate:360}}
-                                        transition={{yoyo:Infinity}}
-                                        className={sending ? "w-fit h-fit ml-10 text-green-500 text-4xl" : "hidden" }
-                                    >
-                                        <VscIssueDraft/>  
-                                    </motion.div> 
+                                    <IoMdPaperPlane className={sending ? "animate-pulse text-4xl ml-6 mb-6 text-center text-purple-600 " : "hidden" } />
                                 </div>
                             </div>
                         </form>    
