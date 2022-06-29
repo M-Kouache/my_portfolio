@@ -5,10 +5,10 @@ import AnimatePresence from '../components/motionPresence';
 import Nav from './navigator'
 
 
+
 export default function Home() {
   return (  
-
-      <Layout>
+     <Layout>
         <AnimatePresence>
           <div className={styles.home_name_container}>
             <h1 className={styles.home_h1}>MOHAMED KOUACHE</h1>
