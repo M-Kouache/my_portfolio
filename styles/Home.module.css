@@ -14,7 +14,8 @@
   transform:translate(50%,-50%);
 }
 
-.home_h1{
+.home_h2{
+  display: flex;
   font-size:4rem;
 }
 
