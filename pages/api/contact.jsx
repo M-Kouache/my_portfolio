@@ -16,7 +16,7 @@ export default async function handler(req, res) {
   };
 
   try {
-    //await Email.send(msg);
+    await Email.send(msg);
     res.status(200).json({message:true})
   } catch (error) {
     res.status(500).json({failed:true})

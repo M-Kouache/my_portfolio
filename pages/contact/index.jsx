@@ -192,13 +192,13 @@ const Contact =()=> {
                             </div>
                             <div className="flex flex-wrap -mx-3 mb-6">
                                 <div className="w-full flex items-center px-3">
-                                    <input className="shadow mb-6 bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"  type="submit" value="Let's talk." required />        
-                                    <IoMdPaperPlane className={sending ? "animate-pulse text-4xl ml-6 mb-6 text-center text-purple-600 " : "hidden" } />
+                                    <input className="shadow mb-6 bg-black hover:bg-gray-800 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"  type="submit" value="Let's talk." required />        
+                                    <IoMdPaperPlane className={sending ? "animate-pulse text-4xl ml-6 mb-6 text-center text-black " : "hidden" } />
                                 </div>
                             </div>
                         </form>    
                     </div>
-                   <div className=" w-full hidden md:bg-slate-800 md:flex md:items-center md:justify-center overflow-y-auto scrollbar-none">
+                   <div className=" w-full hidden md:bg-zinc-900 md:flex md:items-center md:justify-center overflow-y-auto scrollbar-none">
                        <h1 className="text-center text-slate-200 text-[3rem]">
                             MAKE <br/> IT <br/> HAPPEN.<br/> JUST <br/> A <br/> CLICK <br/> AWAY.
                         </h1> 
