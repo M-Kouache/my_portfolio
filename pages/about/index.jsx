@@ -36,34 +36,34 @@ const About = ()=> {
                         <div className='md:w-2/4 h-full flex flex-col justify-center rounded-3xl md:pr-3  bg-gray-800 mt-10 md:mt-0'>
                             <h1 className='md:text-3xl text-2xl py-2 font-bold text-white font-mono text-center md:pb-5'>_TOOLS I USE_</h1>
                             <div className="flex justify-evenly  py-2">
-                                <i class="devicon-django-plain text-green-600  text-5xl  hover:scale-150 duration-500 " ></i>
-                                <i class="devicon-c-line-wordmark colored  text-teal-600 text-5xl hover:scale-150 duration-500" ></i>
-                                <i class="devicon-cplusplus-line-wordmark colored text-teal-600 text-5xl hover:scale-150 duration-500" ></i>
-                                <i class="devicon-docker-plain-wordmark colored text-teal-600 text-6xl hover:scale-150 duration-500" ></i>
+                                <i className="devicon-django-plain text-green-600  text-5xl  hover:scale-150 duration-500 " ></i>
+                                <i className="devicon-c-line-wordmark colored  text-teal-600 text-5xl hover:scale-150 duration-500" ></i>
+                                <i className="devicon-cplusplus-line-wordmark colored text-teal-600 text-5xl hover:scale-150 duration-500" ></i>
+                                <i className="devicon-docker-plain-wordmark colored text-teal-600 text-6xl hover:scale-150 duration-500" ></i>
                             </div>
                             <div className=" flex justify-evenly items-center py-2">
-                                <i class="devicon-git-plain-wordmark colored text-teal-600 text-7xl hover:scale-150 duration-500" ></i>
-                                <i class="devicon-github-original-wordmark  text-gray-100 text-5xl hover:scale-150 duration-500" ></i>
-                                <i class="devicon-html5-plain-wordmark  text-red-600 text-6xl hover:scale-150 duration-500" ></i>
-                                <i class="devicon-java-plain-wordmark colored text-teal-600 text-7xl hover:scale-150 duration-500" ></i>
+                                <i className="devicon-git-plain-wordmark colored text-teal-600 text-7xl hover:scale-150 duration-500" ></i>
+                                <i className="devicon-github-original-wordmark  text-gray-100 text-5xl hover:scale-150 duration-500" ></i>
+                                <i className="devicon-html5-plain-wordmark  text-red-600 text-6xl hover:scale-150 duration-500" ></i>
+                                <i className="devicon-java-plain-wordmark colored text-teal-600 text-7xl hover:scale-150 duration-500" ></i>
                             </div>
                             <div className=" flex justify-around items-center py-2">
-                                <i class="devicon-javascript-plain colored text-teal-600 text-5xl hover:scale-150 duration-500" ></i>
-                                <i class="devicon-linux-plain text-yellow-600 text-7xl hover:scale-150 duration-500" ></i>
-                                <i class="devicon-nextjs-original-wordmark  text-white font-normal text-8xl hover:scale-150 duration-500" ></i>
-                                <i class="devicon-nodejs-plain-wordmark colored text-teal-600 text-9xl hover:scale-150 duration-500" ></i>
+                                <i className="devicon-javascript-plain colored text-teal-600 text-5xl hover:scale-150 duration-500" ></i>
+                                <i className="devicon-linux-plain text-yellow-600 text-7xl hover:scale-150 duration-500" ></i>
+                                <i className="devicon-nextjs-original-wordmark  text-white font-normal text-8xl hover:scale-150 duration-500" ></i>
+                                <i className="devicon-nodejs-plain-wordmark colored text-teal-600 text-9xl hover:scale-150 duration-500" ></i>
                             </div>
                             <div className=" flex justify-evenly items-center py-2">
-                                <i class="devicon-php-plain colored text-teal-600 text-6xl hover:scale-150 duration-500" ></i>
-                                <i class="devicon-python-plain-wordmark text-slate-300 text-6xl hover:scale-150 duration-500" ></i>
-                                <i class="devicon-react-original-wordmark text-teal-600 text-6xl hover:scale-150 duration-500" ></i>
-                                <i class="devicon-r-original colored text-teal-600 text-6xl hover:scale-150 duration-500" ></i>
+                                <i className="devicon-php-plain colored text-teal-600 text-6xl hover:scale-150 duration-500" ></i>
+                                <i className="devicon-python-plain-wordmark text-slate-300 text-6xl hover:scale-150 duration-500" ></i>
+                                <i className="devicon-react-original-wordmark text-teal-600 text-6xl hover:scale-150 duration-500" ></i>
+                                <i className="devicon-r-original colored text-teal-600 text-6xl hover:scale-150 duration-500" ></i>
                             </div>
                             <div className=" flex justify-evenly  items-center py-2">
-                                <i class="devicon-css3-plain-wordmark text-blue-500 text-5xl hover:scale-150 duration-500" ></i>
-                                <i class="devicon-laravel-plain-wordmark colored text-teal-600 text-5xl hover:scale-150 duration-500" ></i>
-                                <i class="devicon-wordpress-plain-wordmark  text-gray-200 text-5xl hover:scale-150 duration-500" ></i>
-                                <i class="devicon-tailwindcss-plain colored text-teal-600 text-6xl hover:scale-150 duration-500" ></i>
+                                <i className="devicon-css3-plain-wordmark text-blue-500 text-5xl hover:scale-150 duration-500" ></i>
+                                <i className="devicon-laravel-plain-wordmark colored text-teal-600 text-5xl hover:scale-150 duration-500" ></i>
+                                <i className="devicon-wordpress-plain-wordmark  text-gray-200 text-5xl hover:scale-150 duration-500" ></i>
+                                <i className="devicon-tailwindcss-plain colored text-teal-600 text-6xl hover:scale-150 duration-500" ></i>
                             </div>
                         </div>
                     </div>
